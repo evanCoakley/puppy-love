@@ -30,6 +30,10 @@ h2 {
     color: #1fabe5
 }
 
+h3 {
+    color: #1fabe5
+}
+
 header {
     background-color: #ff8523;
     padding: 2rem;
@@ -52,13 +56,32 @@ header {
     border: 2px solid #eee;
 }
 
+section {
+    border-bottom: solid lightgray
+}
+
 table {
     width: 100%;
+    padding: 5em;
+}
+
+form {
+    padding: 5em;
 }
 
 table td {
     border: 1px solid #1fabe5;
     border-collapse: collapse;
+}
+
+thead td {
+    background-color: #1fabe5;
+    padding: 2em;
+}
+
+td img {
+    margin: 3em;
+    width: 5em;
 }
 
 tbody td {
