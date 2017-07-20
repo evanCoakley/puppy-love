@@ -16,14 +16,15 @@ colors:
 body {
     background-image: url(img/bg.jpg);
     font-family: Helvetica, Arial, sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 230px;
+    margin-right: 230px;
     border: solid 2px #ffd24a;
     border-radius: 4px;
 }
 
 div {
     background-color: white;
+    font: Helvetica;
 }
 
 h2 {
@@ -43,8 +44,9 @@ header {
     border-radius: 5px;
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 18px;
     color: white;
+    padding: .5em;
     margin-top: 1px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -57,17 +59,18 @@ header {
 }
 
 section {
-    border-bottom: solid lightgray
+    border-bottom: solid lightgray;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 table {
     width: 100%;
-    padding: 5em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
-form {
-    padding: 5em;
-}
+form {}
 
 table td {
     border: 1px solid #1fabe5;
@@ -76,7 +79,7 @@ table td {
 
 thead td {
     background-color: #1fabe5;
-    padding: 2em;
+    padding: 2em
 }
 
 td img {
