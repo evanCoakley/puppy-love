@@ -16,16 +16,16 @@ colors:
 body {
     background-image: url(img/bg.jpg);
     font-family: Helvetica, Arial, sans-serif;
-    margin-left: 230px;
-    margin-right: 230px;
-    border: solid 2px #ffd24a;
-    border-radius: 4px;
     line-height: 1.6;
+    margin: 0;
 }
 
-div {
-    background-color: white;
-    font: Helvetica;
+body > div {
+    max-width: 52rem;
+    margin: 0.5em auto 1.5em;
+    border: solid 2px #ffd24a;
+    border-radius: 4px;
+    background: #fff;
 }
 
 h2 {
@@ -38,31 +38,33 @@ h3 {
 
 header {
     background-color: #ff8523;
-    padding: 2rem;
+    padding: 2rem 1rem;
+}
+
+ul {
+    font-weight: bold;
 }
 
 .main_navigation a {
     border-radius: 5px;
     text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-weight: bold;
     color: white;
-    padding: 10px 30px 10px 30px;
-    margin-top: 1px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 5px;
+    padding: 5px 30px;
     text-align: center;
     display: inline-block;
-    width: 20%;
-    height: 20%;
     border: .25px solid #eee;
 }
 
+#page_content {
+    margin: 1rem;
+}
+
 section {
+    padding-bottom: 2rem;
     border-bottom: solid lightgray;
-    padding-right: 2em;
-    padding-left: 2em;
+    /* padding-right: 2em; */
+    /* padding-left: 2em; */
 }
 
 a {
@@ -70,38 +72,30 @@ a {
 }
 
 table {
-    table-layout: fixed;
-    width: auto;
-    height: 50%;
-    padding-right: 2em;
-    padding-left: 2em;
     border-collapse: collapse;
 }
 
 table td {
     border: 1px solid #1fabe5;
-    border-collapse: collapse;
 }
 
 thead td {
     background-color: #1fabe5;
-    padding: 2em
+    padding: 0.7em;
+    color: #fff;
+    border: 1px solid #046c97;
 }
 
 td img {
-    margin: 2.5em;
-    width: 5em;
-    padding: 1px;
+    display: block;
+    margin: 1em;
+    height: 4em;
+    width: auto;
     border: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 tbody td {
-    padding: 2px;
-    width: 85%;
-    height: 50%;
+    padding: 0.7em;
 }
 
 form {
@@ -111,7 +105,6 @@ form {
     background-color: #ebe8e7;
     line-height: 3;
     margin-top: 2rem;
-    margin-bottom: 2rem;
     font-weight: bold;
 }
 
@@ -125,11 +118,15 @@ form {
 
 textarea {
     border-radius: 1px;
-    font-size: 1em;
+    /* font-size: 1em; */
     width: 95%;
 }
 
-.submit_container input {}
+.name input {
+    padding: 0.65rem 0;
+    width: 13rem;
+    margin-right: 1rem;
+}
 
 #submit_button {
     border: 1px #1fabe5;
